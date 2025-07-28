@@ -13,3 +13,4 @@ For CI i am using GH actions and for CD i am using Gitops/ArgoCD
 CI/CD PIPELINE FLOW
 CI - Stage1:Build and unit test ,Stage2:Static code analysis,Stage3:Docker image creation and pushing the docker image, Stage4:Upadat helm
 CD - In CD ,we will use ArgoCD .Argocd will watch the helm chart. When ever the values.yml is updated it will pull the helm chart and install it in kubernetes cluster
+Marketplace is site where you can get information about CI
