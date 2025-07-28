@@ -9,3 +9,7 @@ WE WILL ALSO SET AN INGRESS CONTROLLER. SO, THAT THE INGRESS CONTROLLER WOULD CR
 After containerization a application , push the image into dockerhub because kubernetes cluster try pullout image from dockerhub
 Ingress controller watches ingress resources and create loadbalancer
 Chart.yml provides the information of the chart you can assume it as the metadata.So,it provides the information of the chart
+For CI i am using GH actions and for CD i am using Gitops/ArgoCD
+CI/CD PIPELINE FLOW
+CI - Stage1:Build and unit test ,Stage2:Static code analysis,Stage3:Docker image creation and pushing the docker image, Stage4:Upadat helm
+CD - In CD ,we will use ArgoCD .Argocd will watch the helm chart. When ever the values.yml is updated it will pull the helm chart and install it in kubernetes cluster
