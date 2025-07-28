@@ -8,3 +8,4 @@ WE WILL ALSO SETUP HELM CHART FOR THE APPLICATION
 WE WILL ALSO SET AN INGRESS CONTROLLER. SO, THAT THE INGRESS CONTROLLER WOULD CREATE A LOAD BALANCER DEPENDING ON INGRESS CONFIGURATION.SO, THAT THE APPLICATION CAN BE EXPOSED TO THE OUTSIDE WORLD
 After containerization a application , push the image into dockerhub because kubernetes cluster try pullout image from dockerhub
 Ingress controller watches ingress resources and create loadbalancer
+Chart.yml provides the information of the chart you can assume it as the metadata.So,it provides the information of the chart
